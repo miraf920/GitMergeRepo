@@ -43,6 +43,7 @@ public class MErrorValidationsTest extends MBaseTest {
 		boolean value = mcartpage.getTheCartList(productsNeededValidation);
 		Assert.assertFalse(value);
 		System.out.println("This is the code 4 added after first commit by harris");
+		System.out.println("This is the code 5 added after first commit by Anna");
 
 	}
 	
