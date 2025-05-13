@@ -1,0 +1,9 @@
+MCompleteSeleniumFramework\PageObjects\MCartPage.class
+MCompleteSeleniumFramework\PageObjects\MOrdersPage.class
+MCompleteSeleniumFramework\PageObjects\MCheckOutPage.class
+MCompleteSeleniumFramework\PageObjects\MLandingPage.class
+MCompleteSeleniumFramework\resources\MExtentReports.class
+MCompleteSeleniumFramework\App.class
+MCompleteSeleniumFramework\AbstractComponents\MAbstractComponents.class
+MCompleteSeleniumFramework\PageObjects\MconfirmationPage.class
+MCompleteSeleniumFramework\PageObjects\MproductCatalougePage.class

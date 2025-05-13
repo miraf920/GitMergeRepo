@@ -1,27 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T15:39:44 EDT" name="Surefire suite" finished-at="2025-05-07T15:39:55 EDT" duration-ms="11020">
+  <suite started-at="2025-05-13T12:40:29 EDT" name="Surefire suite" finished-at="2025-05-13T12:41:35 EDT" duration-ms="65380">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="MErrorValidationsTest.logInErrorValidation()[pri:0, instance:MCompleteSeleniumFramework.Tests.MErrorValidationsTest@6eda5c9]" name="logInErrorValidation" class="MCompleteSeleniumFramework.Tests.MErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@41e36e46]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@16ec5519]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
+      <group name="purchaseOrder">
+        <method signature="MStandAloneTest.submitOrder(java.util.HashMap)[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" name="submitOrder" class="MCompleteSeleniumFramework.Tests.MStandAloneTest"/>
+      </group> <!-- purchaseOrder -->
     </groups>
-    <test started-at="2025-05-07T15:39:44 EDT" name="Surefire test" finished-at="2025-05-07T15:39:55 EDT" duration-ms="11020">
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@41e36e46]" started-at="2025-05-07T15:39:44 EDT" name="setUpClass" finished-at="2025-05-07T15:39:45 EDT" duration-ms="700" status="PASS">
+    <test started-at="2025-05-13T12:40:29 EDT" name="Surefire test" finished-at="2025-05-13T12:41:35 EDT" duration-ms="65380">
+      <class name="MCompleteSeleniumFramework.Tests.MStandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:40:59 EDT" name="launchApplication" finished-at="2025-05-13T12:41:05 EDT" duration-ms="5785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:05 EDT" name="submitOrder" data-provider="getData" finished-at="2025-05-13T12:41:13 EDT" duration-ms="7873" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6fd77352]]>
+                <![CDATA[{password=Qwer123$$, productNeeded=ZARA COAT 3,ADIDAS ORIGINAL, email=Ronald_Joe@hotmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:13 EDT" name="tearDown" finished-at="2025-05-13T12:41:15 EDT" duration-ms="1773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:15 EDT" name="launchApplication" finished-at="2025-05-13T12:41:20 EDT" duration-ms="5768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:20 EDT" name="submitOrder" data-provider="getData" finished-at="2025-05-13T12:41:26 EDT" duration-ms="5734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwer123$$, productNeeded=ADIDAS ORIGINAL, email=sofhar@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:26 EDT" name="tearDown" finished-at="2025-05-13T12:41:26 EDT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:26 EDT" name="launchApplication" finished-at="2025-05-13T12:41:33 EDT" duration-ms="6771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:33 EDT" name="orderHistoryTest" finished-at="2025-05-13T12:41:34 EDT" depends-on-methods="MCompleteSeleniumFramework.Tests.MStandAloneTest.submitOrder" duration-ms="1204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MCompleteSeleniumFramework.Tests.MStandAloneTest@192d43ce]" started-at="2025-05-13T12:41:34 EDT" name="tearDown" finished-at="2025-05-13T12:41:35 EDT" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MCompleteSeleniumFramework.Tests.MStandAloneTest -->
+      <class name="MCompleteSeleniumFramework.Tests.MErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MCompleteSeleniumFramework.Tests.MErrorValidationsTest@6eda5c9]" started-at="2025-05-13T12:40:39 EDT" name="launchApplication" finished-at="2025-05-13T12:40:45 EDT" duration-ms="6181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="logInErrorValidation()[pri:0, instance:MCompleteSeleniumFramework.Tests.MErrorValidationsTest@6eda5c9]" started-at="2025-05-13T12:40:45 EDT" name="logInErrorValidation" finished-at="2025-05-13T12:40:46 EDT" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MCompleteSeleniumFramework.Tests.MErrorValidationsTest@6eda5c9]" started-at="2025-05-13T12:40:46 EDT" name="tearDown" finished-at="2025-05-13T12:40:46 EDT" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MCompleteSeleniumFramework.Tests.MErrorValidationsTest@6eda5c9]" started-at="2025-05-13T12:40:46 EDT" name="launchApplication" finished-at="2025-05-13T12:40:53 EDT" duration-ms="7005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:MCompleteSeleniumFramework.Tests.MErrorValidationsTest@6eda5c9]" started-at="2025-05-13T12:40:53 EDT" name="productErrorValidation" finished-at="2025-05-13T12:40:59 EDT" duration-ms="5534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MCompleteSeleniumFramework.Tests.MErrorValidationsTest@6eda5c9]" started-at="2025-05-13T12:40:59 EDT" name="tearDown" finished-at="2025-05-13T12:40:59 EDT" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MCompleteSeleniumFramework.Tests.MErrorValidationsTest -->
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@16ec5519]" started-at="2025-05-13T12:40:29 EDT" name="setUpClass" finished-at="2025-05-13T12:40:30 EDT" duration-ms="822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f557c37]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@41e36e46]" started-at="2025-05-07T15:39:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-07T15:39:55 EDT" duration-ms="10247" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@16ec5519]" started-at="2025-05-13T12:40:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-13T12:40:39 EDT" duration-ms="8572" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@41e36e46]" started-at="2025-05-07T15:39:55 EDT" name="tearDownClass" finished-at="2025-05-07T15:39:55 EDT" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@16ec5519]" started-at="2025-05-13T12:40:39 EDT" name="tearDownClass" finished-at="2025-05-13T12:40:39 EDT" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
