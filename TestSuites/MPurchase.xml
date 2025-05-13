@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Suite">
+
+
+	<groups>
+		<run>
+			<include name="purchaseOrder" />
+		</run>
+	</groups>
+
+	<!--Test -->
+	<test thread-count="5" name="MSubmitOrder">
+		<classes>
+			<class name="MCompleteSeleniumFramework.Tests.MStandAloneTest" />
+
+		</classes>
+	</test>
+
+	<!--Test -->
+	<test thread-count="5" name="MErrorValidation">
+		<classes>
+			<class name="MCompleteSeleniumFramework.Tests.MErrorValidationsTest" />
+
+		</classes>
+	</test>
+
+
+</suite>
