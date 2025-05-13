@@ -20,7 +20,9 @@ public class MErrorValidationsTest extends MBaseTest {
 		
 		mLandingPage.logInTheApplication("wr1Ronald_Joe@hotmail.com",
 				"Qwer123$$");
-		
+		System.out.println("This is the code 1 added after first commit by harris");
+		System.out.println("This is the code 2 added after first commit by harris");
+		System.out.println("This is the code 3 added after first commit by harris");
 		Assert.assertEquals("Incorrect email or password.",mLandingPage.getErrorMessage() );
 
 	}
@@ -40,6 +42,7 @@ public class MErrorValidationsTest extends MBaseTest {
 		String productsNeededValidation  = "ZARA COAT 33, ADIDAS ORIGINAL";
 		boolean value = mcartpage.getTheCartList(productsNeededValidation);
 		Assert.assertFalse(value);
+		System.out.println("This is the code 4 added after first commit by harris");
 
 	}
 	
